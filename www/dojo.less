@@ -1,0 +1,78 @@
+@clouds: #ecf0f1;
+@concrete: #95a5a6;
+@peterRiver: #3498db;
+@belizeHole: #2980b9;
+@wetAsphalt: #34495e;
+@silver: #bdc3c7;
+@asbestos: #7f8c8d;
+/*
+a {
+  background-color: yellow;
+}
+#content p a {
+  background-color: red;
+}
+p #wannabee-black {
+  background-color: green;
+}
+#wannabee-black {
+  background-color: black;
+}
+a.perfect-color {
+  background-color: blue;
+}
+div.main p a.perfect-color {
+  background-color: orange;
+}
+*/
+.ButtonBar {
+  white-space: nowrap;
+
+  .Button {
+    display: inline-block;
+    color: black;
+    background: @clouds;
+    border: 1px solid @concrete;
+    padding: 0.5rem 1rem;
+    margin-right: 1rem;
+    white-space: nowrap;
+    border-radius: 0.2rem;
+    cursor: pointer;
+
+    &:hover {
+      background: white;
+    }
+
+    &.primary {
+      color: white;
+      background: @belizeHole;
+      border-color: @wetAsphalt;
+
+      &:hover {
+        background: @peterRiver;
+        border-color: @belizeHole;
+      }
+    }
+
+    &.disabled {
+      color: @silver;
+      background: @clouds;
+      border-color: @clouds;
+      cursor: not-allowed;
+    }
+
+    i {
+      display: inline-block;
+      font-size: 1.5rem;
+      font-style: normal;
+      padding-right: 0.2rem;
+      vertical-align: middle;
+    }
+
+    span {
+      display: inline-block;
+      font-weight: 600;
+      vertical-align: middle;
+    }
+  }
+}
